@@ -19,5 +19,6 @@ jobs:
           script: |
             cd /home/ubuntu/verbose-meme
             git pull
-            docker-compose down
+            docker-compose down --remove-orphans
+            docker rm -f app1 app2 || true
             docker-compose up -d --build
