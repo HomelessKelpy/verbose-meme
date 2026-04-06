@@ -5,7 +5,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: app1
     ports:
       - "3000:3000"
     environment:
@@ -16,7 +15,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile2
-    container_name: app2
     ports:
       - "4000:3000"
     environment:
