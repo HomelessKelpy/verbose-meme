@@ -5,8 +5,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    ports:
-      - "3000:3000"
     environment:
       - PORT=3000
     restart: always
@@ -15,8 +13,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile2
-    ports:
-      - "4000:3000"
     environment:
       - PORT=3000
     restart: always
@@ -25,8 +21,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile3
-    ports:
-      - "5000:3000"
     environment:
       - PORT=3000
     restart: always
