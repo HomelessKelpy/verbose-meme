@@ -17,7 +17,7 @@ services:
       - PORT=3000
     restart: always
 
-    app3:
+  app3:
     build:
       context: .
       dockerfile: Dockerfile3
